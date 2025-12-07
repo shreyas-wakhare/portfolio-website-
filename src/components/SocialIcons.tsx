@@ -54,6 +54,16 @@ const SocialIcons = () => {
     });
   }, []);
 
+  const handleResumeClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    // Resume link
+    window.open("https://drive.google.com/file/d/12r53CZK8QWv7D9BFMXS_18JhV5f8b8qV/view?usp=sharing", "_blank");
+    // Project Summary link with slight delay
+    setTimeout(() => {
+      window.open("https://docs.google.com/document/d/1vt7v7AGptNIgF1U7-69dJFaJFvaFnwip/edit?usp=sharing&ouid=106588884908320703949&rtpof=true&sd=true", "_blank");
+    }, 100);
+  };
+
   return (
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
@@ -68,7 +78,7 @@ const SocialIcons = () => {
           </a>
         </span>
       </div>
-      <a className="resume-button" href="https://drive.google.com/file/d/12r53CZK8QWv7D9BFMXS_18JhV5f8b8qV/view?usp=sharing" target="_blank">
+      <a className="resume-button" onClick={handleResumeClick} style={{ cursor: 'pointer' }}>
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />

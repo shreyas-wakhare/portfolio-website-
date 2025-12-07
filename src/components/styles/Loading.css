@@ -198,6 +198,33 @@
   font-size: 14px;
   letter-spacing: 0.2px;
 }
+
+.loading-header .animated-logo {
+  display: inline-block;
+  position: relative;
+}
+
+.loading-header .logo-s, 
+.loading-header .logo-w {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5),
+               0 0 20px rgba(0, 255, 136, 0.3),
+               0 0 30px rgba(0, 255, 136, 0.2);
+}
+
+.loading-header .logo-s {
+  color: #000;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.loading-header .logo-w {
+  color: #333;
+  animation: pulse 2s ease-in-out infinite 0.5s;
+}
+
 @keyframes blink {
   0% {
     opacity: 0;
