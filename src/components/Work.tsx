@@ -48,23 +48,76 @@ const Work = () => {
           My <span>Work</span>
         </h2>
         <div className="work-flex">
-          {[...Array(6)].map((_value, index) => (
-            <div className="work-box" key={index}>
-              <div className="work-info">
-                <div className="work-title">
-                  <h3>0{index + 1}</h3>
-
-                  <div>
-                    <h4>Project Name</h4>
-                    <p>Category</p>
-                  </div>
+          <div className="work-box">
+            <div className="work-info">
+              <div className="work-title">
+                <h3>01</h3>
+                <div>
+                  <h4>Fintech Platform</h4>
+                  <p>Finance & Technology</p>
                 </div>
-                <h4>Tools and features</h4>
-                <p>Javascript, TypeScript, React, Threejs</p>
               </div>
-              <WorkImage image="/images/placeholder.webp" alt="" />
+              <h4>Tools and features</h4>
+              <p>React, Node.js, MongoDB, Payment Gateway Integration</p>
             </div>
-          ))}
+            <WorkImage image="/images/fin.jpg" alt="Fintech Platform" />
+          </div>
+          <div className="work-box">
+            <div className="work-info">
+              <div className="work-title">
+                <h3>02</h3>
+                <div>
+                  <h4>Neuroid AI</h4>
+                  <p>Machine Learning</p>
+                </div>
+              </div>
+              <h4>Tools and features</h4>
+              <p>Python, TensorFlow, Neural Networks, Data Processing</p>
+            </div>
+            <WorkImage image="/images/neuroid.jpg" alt="Neuroid AI" />
+          </div>
+          <div className="work-box">
+            <div className="work-info">
+              <div className="work-title">
+                <h3>03</h3>
+                <div>
+                  <h4>AI Traffic Management</h4>
+                  <p>Smart City Solution</p>
+                </div>
+              </div>
+              <h4>Tools and features</h4>
+              <p>Computer Vision, Python, Real-time Analytics, IoT</p>
+            </div>
+            <WorkImage image="/images/traffic.jpg" alt="AI Traffic Management" />
+          </div>
+          <div className="work-box">
+            <div className="work-info">
+              <div className="work-title">
+                <h3>04</h3>
+                <div>
+                  <h4>Lead Management System</h4>
+                  <p>Business Automation</p>
+                </div>
+              </div>
+              <h4>Tools and features</h4>
+              <p>React, Express.js, MySQL, CRM Integration</p>
+            </div>
+            <WorkImage image="/images/lead.jpg" alt="Lead Management System" />
+          </div>
+          <div className="work-box">
+            <div className="work-info">
+              <div className="work-title">
+                <h3>05</h3>
+                <div>
+                  <h4>Portfolio Website</h4>
+                  <p>Personal Branding</p>
+                </div>
+              </div>
+              <h4>Tools and features</h4>
+              <p>React, TypeScript, Three.js, GSAP Animations</p>
+            </div>
+            <WorkImage image="/images/portfolio.webp" alt="Portfolio Website" />
+          </div>
         </div>
       </div>
     </div>
