@@ -45,6 +45,45 @@
   font-size: 14px;
   letter-spacing: 0.2px;
 }
+
+.animated-logo {
+  display: inline-block;
+  animation: logoRotate 3s ease-in-out infinite;
+}
+
+.logo-s, .logo-w {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.logo-s {
+  color: #fff;
+  animation: letterRotate 2s ease-in-out infinite;
+}
+
+.logo-w {
+  color: #ccc;
+  animation: letterRotate 2s ease-in-out infinite 0.2s;
+}
+
+@keyframes logoRotate {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes letterRotate {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+}
 @media only screen and (min-width: 500px) {
   .header {
     padding: 20px 0px;

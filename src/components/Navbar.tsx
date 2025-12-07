@@ -41,8 +41,9 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
+        <a href="/#" className="navbar-title animated-logo" data-cursor="disable">
+          <span className="logo-s">S</span>
+          <span className="logo-w">W</span>
         </a>
         <a
           href="mailto:wakhareshreyas@mail.com"
